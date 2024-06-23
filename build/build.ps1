@@ -1,0 +1,2 @@
+dotnet build ..\src\Printer -c release --no-self-contained -r win-x64 /p:PublishSingleFile=true /p:CopyOutputSymbolsToPublishDirectory=false /p:PreserveCompilationContext=false -o ..\pkgs\artifacts\
+choco pack ..\pkgs\printer\printer.nuspec
